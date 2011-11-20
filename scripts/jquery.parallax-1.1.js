@@ -64,8 +64,8 @@ function RepositionNav(){
 		if(inertia == null){inertia = 0.1}
 		if(outerHeight == null){outerHeight = true}
 		
-		height = $this.height();
-		$this.css({'backgroundPosition': newPos(xpos, outerHeight, adjuster, inertia)}); 
+		var height = outerHeight ? $this.outerHeight(true) : $this.height();
+		$this.css({'backgroundPosition': newPos(xpos, height, pos, adjuster, inertia)});
 		
 		function newPos(xpos, windowHeight, pos, adjuster, inertia){
 			return xpos + " " + Math.round((-((windowHeight + pos) - adjuster) * inertia)) + "px";
