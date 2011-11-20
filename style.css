@@ -18,7 +18,7 @@ body{
 }
 
 p{
-	margin: 0 0 20px 0;	
+	margin: 0 0 20px 0;
 }
 
 p, ul{
@@ -51,7 +51,7 @@ h2{
 }
 
 .float-left{
-	float: left;	
+	float: left;
 	margin: 0 0 0 20px;
 }
 
@@ -73,7 +73,7 @@ h2{
 }
 
 #nav li{
-	margin: 0 0 15px 0;	
+	margin: 0 0 15px 0;
 }
 
 #header, #intro, #second{
@@ -111,7 +111,7 @@ h2{
 	background: url(images/thirdBG.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 650px;
-	padding: 100px 0 0 0;	
+	padding: 100px 0 0 0;
 }
 
 #fifth{
@@ -131,5 +131,5 @@ h2{
 .story .float-left, .story .float-right{
 	padding: 100px 0 0 0;
 	position: relative;
-	width: 350px;	
+	width: 350px;
 }
