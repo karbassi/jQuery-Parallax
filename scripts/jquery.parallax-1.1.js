@@ -23,35 +23,35 @@ function RepositionNav(){
 (function( $ ){
 	$.fn.parallax = function(xpos, adjuster, inertia, outerHeight) {
 			
-function inView(pos, element){
-	
-	element.each(function(){ //for each selector, determine whether it's inview and run the move() function
-		
-		var element = $(this);
-		var top = element.offset().top;
-		
-		if(outerHeight == true){
-			var height = element.outerHeight(true);
-		}else{
-			var height = element.height();
-		}
-		
-		//above & in view
-		if(top + height >= pos && top + height - windowHeight < pos){
-			move(pos, height);
-		}
-				
-		//full view
-		if(top <= pos && (top + height) >= pos && (top - windowHeight) < pos && top + height - windowHeight > pos){
-			move(pos, height);
-		}
-		
-		//below & in view
-		if(top + height > pos && top - windowHeight < pos && top > pos){
-			move(pos, height);
-		}
-	});
-}		
+    function inView(pos, element){
+      
+      element.each(function(){ //for each selector, determine whether it's inview and run the move() function
+      	
+      	var element = $(this);
+      	var top = element.offset().top;
+      	
+      	if(outerHeight == true){
+      		var height = element.outerHeight(true);
+      	}else{
+      		var height = element.height();
+      	}
+      	
+      	//above & in view
+      	if(top + height >= pos && top + height - windowHeight < pos){
+      		move(pos, height);
+      	}
+      	
+      	//full view
+      	if(top <= pos && (top + height) >= pos && (top - windowHeight) < pos && top + height - windowHeight > pos){
+      		move(pos, height);
+      	}
+      	
+      	//below & in view
+      	if(top + height > pos && top - windowHeight < pos && top > pos){
+      		move(pos, height);
+      	}
+      });
+    }
 		
 		var $window = $(window);
 		var windowHeight = $(window).height();
